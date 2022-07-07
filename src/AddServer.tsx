@@ -40,7 +40,7 @@ export default function AddServer({ setAria2Client, setSuccess }: ServerProps) {
         navigate("/addTask");
       },
       (e) => {
-        navigate("/addServer");
+        navigate("/Servers");
       }
     );
   }
