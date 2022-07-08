@@ -25,7 +25,7 @@ export default class Aria2Client extends EventEmitter {
     this.first = first;
     this.id = 0;
 
-    let url = `wss://${this.ip}:${this.port}/jsonrpc`;
+    let url = `ws://${this.ip}:${this.port}/jsonrpc`;
     this.ws = new WebSocket(url);
     this.callbacks = {};
     let aria2Client = this;
